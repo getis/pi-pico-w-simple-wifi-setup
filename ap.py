@@ -1,4 +1,5 @@
-import socket
+# Access Point mode
+
 import network
 import machine
 import time

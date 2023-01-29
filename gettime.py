@@ -48,5 +48,6 @@ while True:
     start = utime.ticks_ms()
     response = urequests.get('https://timeapi.io/api/Time/current/zone?timeZone=Europe/London')
     print('request took ' + str(utime.ticks_ms() - start) + "ms")
+    print(response.content)
     print(response.json()['dateTime'])
     utime.sleep(5)
